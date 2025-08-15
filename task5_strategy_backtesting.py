@@ -35,7 +35,7 @@ class StrategyBacktester:
     Portfolio strategy backtesting and performance analysis
     """
     
-    def __init__(self, symbols=['TSLA', 'BND', 'SPY'], backtest_start='2024-01-15', backtest_end='2025-01-15'):
+    def __init__(self, symbols=['TSLA', 'BND', 'SPY'], backtest_start='2024-08-01', backtest_end='2025-07-31'):
         self.symbols = symbols
         self.backtest_start = backtest_start
         self.backtest_end = backtest_end
@@ -52,7 +52,7 @@ class StrategyBacktester:
         print("="*60)
         
         # Load full historical data for model training
-        full_start = '2020-01-01'
+        full_start = '2015-07-01'
         self.full_data = {}
         
         for symbol in self.symbols:
@@ -471,8 +471,8 @@ def main():
     # Initialize backtester
     backtester = StrategyBacktester(
         symbols=['TSLA', 'BND', 'SPY'], 
-        backtest_start='2024-01-15', 
-        backtest_end='2025-01-15'
+        backtest_start='2024-08-01', 
+        backtest_end='2025-07-31'
     )
     
     # Step 1: Load backtesting data

@@ -47,8 +47,8 @@ def main():
     assets = ['TSLA', 'BND', 'SPY']
     
     # Define the time period
-    end_date = "2023-12-31"
-    start_date = "2015-01-01"
+    end_date = "2025-07-31"
+    start_date = "2015-07-01"
     
     print(f"Assets to analyze: {assets}")
     print(f"Time period: {start_date} to {end_date}")

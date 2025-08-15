@@ -43,7 +43,7 @@ class PortfolioOptimizer:
     and historical asset returns.
     """
     
-    def __init__(self, symbols=['TSLA', 'BND', 'SPY'], start_date='2020-01-01', end_date='2025-01-15'):
+    def __init__(self, symbols=['TSLA', 'BND', 'SPY'], start_date='2015-07-01', end_date='2025-07-31'):
         self.symbols = symbols
         self.start_date = start_date
         self.end_date = end_date
@@ -598,7 +598,7 @@ def main():
     print("="*80)
     
     # Initialize optimizer
-    optimizer = PortfolioOptimizer(symbols=['TSLA', 'BND', 'SPY'], start_date='2020-01-01')
+    optimizer = PortfolioOptimizer(symbols=['TSLA', 'BND', 'SPY'], start_date='2015-07-01')
     
     # Step 1: Load historical data
     if not optimizer.load_historical_data():

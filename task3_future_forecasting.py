@@ -56,7 +56,7 @@ class FutureMarketForecaster:
     and comprehensive risk assessment.
     """
     
-    def __init__(self, symbol='TSLA', start_date='2015-01-01', end_date='2025-01-15'):
+    def __init__(self, symbol='TSLA', start_date='2015-07-01', end_date='2025-07-31'):
         self.symbol = symbol
         self.start_date = start_date
         self.end_date = end_date
@@ -638,7 +638,7 @@ def main():
     print("="*80)
     
     # Initialize forecaster
-    forecaster = FutureMarketForecaster(symbol='TSLA', start_date='2015-01-01')
+    forecaster = FutureMarketForecaster(symbol='TSLA', start_date='2015-07-01')
     
     # Step 1: Load and prepare data
     if not forecaster.load_and_prepare_data():
