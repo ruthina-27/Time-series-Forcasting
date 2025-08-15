@@ -1,16 +1,16 @@
 """
-Time Series Forecasting Portfolio - Task 4: Optimize Portfolio Based on Forecast
+Portfolio Optimization using Modern Portfolio Theory
 
-This script implements Modern Portfolio Theory (MPT) to optimize a portfolio containing:
-- TSLA: Using forecasted returns from Task 2/3
-- BND: Using historical average returns (bond ETF)
-- SPY: Using historical average returns (S&P 500 ETF)
+Optimizes portfolio allocation for:
+- TSLA: Using forecasted returns
+- BND: Bond ETF with historical returns
+- SPY: S&P 500 ETF with historical returns
 
-Key components:
-- Efficient Frontier generation
-- Maximum Sharpe Ratio portfolio identification
-- Minimum Volatility portfolio identification
-- Portfolio recommendation with justification
+Features:
+- Efficient Frontier construction
+- Maximum Sharpe Ratio portfolio
+- Minimum Volatility portfolio
+- Investment recommendations
 """
 
 import yfinance as yf
@@ -39,8 +39,8 @@ plt.rcParams['font.size'] = 12
 
 class PortfolioOptimizer:
     """
-    Modern Portfolio Theory implementation for optimizing portfolio
-    based on forecasted and historical returns.
+    Portfolio optimization using MPT with forecasted
+    and historical asset returns.
     """
     
     def __init__(self, symbols=['TSLA', 'BND', 'SPY'], start_date='2020-01-01', end_date='2025-01-15'):
@@ -593,8 +593,8 @@ def main():
     """Main function to execute portfolio optimization"""
     
     print("="*80)
-    print("TIME SERIES FORECASTING PORTFOLIO - TASK 4")
-    print("Optimize Portfolio Based on Forecast using Modern Portfolio Theory")
+    print("PORTFOLIO OPTIMIZATION")
+    print("Modern Portfolio Theory Implementation")
     print("="*80)
     
     # Initialize optimizer

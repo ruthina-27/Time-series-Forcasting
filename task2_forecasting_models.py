@@ -1,10 +1,12 @@
 """
-Time Series Forecasting Portfolio - Task 2: Develop Time Series Forecasting Models
+Tesla Stock Forecasting Models
 
-This script implements comprehensive time series forecasting models for Tesla stock price prediction:
-- ARIMA/SARIMA models with parameter optimization
-- LSTM deep learning models
-- Model comparison and evaluation using MAE, RMSE, and MAPE
+Implements multiple forecasting approaches:
+- ARIMA with parameter optimization
+- SARIMA for seasonal patterns
+- LSTM neural network model
+- Model evaluation and comparison
+- Performance metrics analysis
 - Chronological data splitting (train: 2015-2023, test: 2024-2025)
 """
 
@@ -44,8 +46,8 @@ plt.rcParams['font.size'] = 12
 
 class TimeSeriesForecaster:
     """
-    A comprehensive time series forecasting class that implements both
-    statistical (ARIMA/SARIMA) and deep learning (LSTM) models.
+    Tesla stock forecasting with multiple models
+    including ARIMA, SARIMA, and LSTM approaches.
     """
     
     def __init__(self, symbol='TSLA', start_date='2015-01-01', end_date='2025-01-01'):
@@ -518,8 +520,8 @@ def main():
     """Main function to execute the complete forecasting pipeline"""
     
     print("="*80)
-    print("TIME SERIES FORECASTING PORTFOLIO - TASK 2")
-    print("Develop Time Series Forecasting Models for Tesla Stock")
+    print("TESLA STOCK FORECASTING MODELS")
+    print("ARIMA, SARIMA, and LSTM Model Comparison")
     print("="*80)
     
     # Initialize forecaster

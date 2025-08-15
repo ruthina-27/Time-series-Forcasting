@@ -1,10 +1,11 @@
 """
-Time Series Forecasting Portfolio - Task 5: Strategy Backtesting
+Portfolio Strategy Backtesting
 
-This script implements comprehensive backtesting to validate the portfolio strategy:
-- Simulates strategy portfolio performance using optimal weights from Task 4
-- Compares against a 60/40 SPY/BND benchmark portfolio
-- Analyzes performance metrics and provides conclusions
+Backtests portfolio strategy performance:
+- Strategy portfolio with optimized weights
+- Benchmark comparison (60/40 SPY/BND)
+- Performance metrics and analysis
+- Strategy validation and conclusions
 """
 
 import yfinance as yf
@@ -31,7 +32,7 @@ plt.rcParams['font.size'] = 12
 
 class StrategyBacktester:
     """
-    Comprehensive backtesting framework for portfolio strategy validation
+    Portfolio strategy backtesting and performance analysis
     """
     
     def __init__(self, symbols=['TSLA', 'BND', 'SPY'], backtest_start='2024-01-15', backtest_end='2025-01-15'):
@@ -463,8 +464,8 @@ def main():
     """Main function to execute strategy backtesting"""
     
     print("="*80)
-    print("TIME SERIES FORECASTING PORTFOLIO - TASK 5")
-    print("Strategy Backtesting and Performance Validation")
+    print("PORTFOLIO STRATEGY BACKTESTING")
+    print("Performance Analysis and Validation")
     print("="*80)
     
     # Initialize backtester

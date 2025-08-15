@@ -1,11 +1,11 @@
 """
-Time Series Forecasting Portfolio - Task 3: Forecast Future Market Trends
+Tesla Future Market Forecasting
 
-This script implements comprehensive future forecasting for Tesla stock prices:
-- Uses the best-performing model from Task 2
-- Generates 6-12 month forecasts with confidence intervals
-- Analyzes trends, volatility, and market opportunities/risks
-- Provides detailed interpretation and insights
+Future price prediction and trend analysis:
+- Best model selection and forecasting
+- 6-12 month price predictions with confidence intervals
+- Trend analysis and volatility assessment
+- Market opportunities and risk evaluation
 """
 
 import yfinance as yf
@@ -52,8 +52,8 @@ plt.rcParams['font.size'] = 12
 
 class FutureMarketForecaster:
     """
-    Advanced forecasting class for generating future market predictions
-    with comprehensive trend analysis and risk assessment.
+    Tesla future market forecasting with trend analysis
+    and comprehensive risk assessment.
     """
     
     def __init__(self, symbol='TSLA', start_date='2015-01-01', end_date='2025-01-15'):
@@ -633,8 +633,8 @@ def main():
     """Main function to execute the future forecasting pipeline"""
     
     print("="*80)
-    print("TIME SERIES FORECASTING PORTFOLIO - TASK 3")
-    print("Forecast Future Market Trends for Tesla Stock")
+    print("TESLA FUTURE MARKET FORECASTING")
+    print("Future Price Trends and Risk Analysis")
     print("="*80)
     
     # Initialize forecaster

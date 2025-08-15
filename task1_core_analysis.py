@@ -1,13 +1,13 @@
 """
-Time Series Forecasting Portfolio - Task 1: Core Data Preprocessing and EDA
+Tesla Stock Analysis - Core Data Analysis
 
-This script implements the core requirements for Task 1:
-- Data extraction and cleaning
-- Exploratory data analysis (EDA)
-- Statistical analysis and stationarity testing
-- Volatility analysis
-- Seasonality and trend analysis
-- Basic forecasting with ARIMA
+Analyzes Tesla stock data including:
+- Data loading and preprocessing
+- Statistical analysis and visualization
+- Stationarity testing
+- Volatility patterns
+- Seasonal trends
+- ARIMA forecasting
 """
 
 import yfinance as yf
@@ -30,11 +30,11 @@ plt.rcParams['figure.figsize'] = (14, 8)
 plt.rcParams['font.size'] = 12
 
 def main():
-    """Main function to execute the core time series analysis"""
+    """Execute Tesla stock analysis"""
     
     print("="*60)
-    print("TIME SERIES FORECASTING PORTFOLIO - TASK 1")
-    print("Core Data Preprocessing and Exploratory Data Analysis")
+    print("TESLA STOCK ANALYSIS")
+    print("Data Analysis and Forecasting")
     print("="*60)
     
     # ========================================
@@ -43,8 +43,8 @@ def main():
     print("\n1. DATA EXTRACTION AND LOADING")
     print("-" * 40)
     
-    # Define the assets we'll analyze
-    assets = ['AAPL', 'AMZN', 'AGG']
+    # Define the assets to analyze
+    assets = ['TSLA', 'BND', 'SPY']
     
     # Define the time period
     end_date = "2023-12-31"
